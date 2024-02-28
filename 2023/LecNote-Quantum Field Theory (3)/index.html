@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"polarismegrez.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.    Klein-Gordon方程  实标量场 \begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation} 正则动量： \begin{equation} \pi(">
+    <meta name="description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   Klein-Gordon方程 实标量场 \[\begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation}\] 正则动量： \[\begin{equ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[Phys] 量子场论笔记(3) 克莱因-戈登(Klein-Gordon)场">
 <meta property="og:url" content="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(3)/index.html">
 <meta property="og:site_name" content="叶衍的笔记本">
-<meta property="og:description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.    Klein-Gordon方程  实标量场 \begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation} 正则动量： \begin{equation} \pi(">
+<meta property="og:description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   Klein-Gordon方程 实标量场 \[\begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation}\] 正则动量： \[\begin{equ">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-20T05:30:00.000Z">
-<meta property="article:modified_time" content="2024-02-28T09:13:34.550Z">
+<meta property="article:modified_time" content="2024-02-28T09:29:38.967Z">
 <meta property="article:author" content="Polaris Yeh">
 <meta property="article:tag" content="基础内容">
 <meta property="article:tag" content="量子场论">
@@ -116,7 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#klein-gordon%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text"> Klein-Gordon方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E6%A0%87%E9%87%8F%E5%9C%BA"><span class="nav-number">2.</span> <span class="nav-text"> 实标量场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%8F%E5%8F%98%E5%AF%B9%E6%98%93%E5%85%B3%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text"> 协变对易关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E6%A0%87%E9%87%8F%E5%9C%BA"><span class="nav-number">4.</span> <span class="nav-text"> 复标量场</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#klein-gordon%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">Klein-Gordon方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E6%A0%87%E9%87%8F%E5%9C%BA"><span class="nav-number">2.</span> <span class="nav-text">实标量场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%8F%E5%8F%98%E5%AF%B9%E6%98%93%E5%85%B3%E7%B3%BB"><span class="nav-number">3.</span> <span class="nav-text">协变对易关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E6%A0%87%E9%87%8F%E5%9C%BA"><span class="nav-number">4.</span> <span class="nav-text">复标量场</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -219,7 +219,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 17:13:34" itemprop="dateModified" datetime="2024-02-28T17:13:34+08:00">2024-02-28</time>
+      <time title="修改时间：2024-02-28 17:29:38" itemprop="dateModified" datetime="2024-02-28T17:29:38+08:00">2024-02-28</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -249,104 +249,71 @@
 <p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p>
 
 </blockquote>
-<h3 id="klein-gordon方程"><a class="markdownIt-Anchor" href="#klein-gordon方程"></a> Klein-Gordon方程</h3>
-<h3 id="实标量场"><a class="markdownIt-Anchor" href="#实标量场"></a> 实标量场</h3>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\mathcal{L}(\p…'>\begin{equation}
+<h3 id="klein-gordon方程">Klein-Gordon方程</h3>
+<h3 id="实标量场">实标量场</h3>
+<p><span class="math display">\[\begin{equation}
 \mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})
-\end{equation}</p>
-<p>正则动量：<br />
-\begin{equation}<br />
-\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)<br />
-\end{equation}</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\mathcal{H}(\p…'>\begin{equation}
+\end{equation}\]</span></p>
+<p>正则动量： <span class="math display">\[\begin{equation}
+\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
 \mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)
-\end{equation}</p>
-<p>平面波解：</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\phi(t,\,\vec{…'>\begin{equation}
+\end{equation}\]</span></p>
+<p>平面波解： <span class="math display">\[\begin{equation}
 \phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}</p>
-<p>此处 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>N</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{N}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 为归一化常数， <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mi>p</mi></msub><mo>=</mo><msqrt><mrow><msup><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.2821659999999999em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578340000000001em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
-3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
-10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
--1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
--7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
-H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
-c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-2.917834em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119
-c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
-c340,-704.7,510.7,-1060.3,512,-1067
-l0 -0
-c4.7,-7.3,11,-11,19,-11
-H40000v40H1012.3
-s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
-c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
-s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
-c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
-M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2821659999999999em;"><span></span></span></span></span></span></span></span></span> 。</p>
-<p>计算可得</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\pi(t,\,\vec{x…'>\begin{equation}
+\end{equation}\]</span></p>
+<p>此处 <span class="math inline">\(\bar{N}_{p}\)</span> 为归一化常数，
+<span class="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>
+。</p>
+<p>计算可得 <span class="math display">\[\begin{equation}
 \pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}</p>
-<p>则有</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
-\omega_{p}\phi…'>\begin{align}
+\end{equation}\]</span></p>
+<p>则有 <span class="math display">\[\begin{align}
 \omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\
 \omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}
-\end{align}</p>
-<p>作Fourier逆变换得到</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
-(2\bar{N}_{p}\…'>\begin{align}
+\end{align}\]</span></p>
+<p>作Fourier逆变换得到 <span class="math display">\[\begin{align}
 (2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\
 (2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}</p>
-<p>从而有</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
-a_{p}=\bar{A}_…'>\begin{align}
+\end{align}\]</span></p>
+<p>从而有 <span class="math display">\[\begin{align}
 a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
 a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}</p>
-<p>此处 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>A</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{A}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.11110999999999999em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 为归一化常数，满足关系</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\bar{A}_{p}\ba…'>\begin{equation}
+\end{align}\]</span></p>
+<p>此处 <span class="math inline">\(\bar{A}_{p}\)</span>
+为归一化常数，满足关系 <span class="math display">\[\begin{equation}
 \bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}
-\end{equation}</p>
-<p>注意到正则对易关系</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-[\phi(t,\,\vec…'>\begin{equation}
-[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#039;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#039;)
-\end{equation}</p>
-<p>此处</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\delta(\vec{x}…'>\begin{equation}
-\delta(\vec{x}-\vec{x}&#039;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
-\end{equation}</p>
-<p>解得产生、湮灭算符的对易关系</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
-[a_{p},\,a_{p&#039;…'>\begin{align}
-[a_{p},\,a_{p&#039;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#039;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#039;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#039;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#039;}t-\vec{p&#039;}\cdot\vec{x&#039;})}}\\
-&amp;=(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#039;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#039;}t-\vec{p&#039;}\cdot\vec{x&#039;})}}\\
-&amp;=(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#039;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#039;)\cdot\vec{x}}}\\
-&amp;=(2\pi)^{3}(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}\delta^{3}(\vec{p}-\vec{p}&#039;)
-\end{align}</p>
-<p>注意到，倘若我们选取归一化常数</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\bar{N}_{p}=\b…'>\begin{equation}
+\end{equation}\]</span></p>
+<p>注意到正则对易关系 <span class="math display">\[\begin{equation}
+[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)
+\end{equation}\]</span></p>
+<p>此处 <span class="math display">\[\begin{equation}
+\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
+\end{equation}\]</span></p>
+<p>解得产生、湮灭算符的对易关系 <span
+class="math display">\[\begin{align}
+[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
+&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
+&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\
+&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)
+\end{align}\]</span></p>
+<p>注意到，倘若我们选取归一化常数 <span
+class="math display">\[\begin{equation}
 \bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}
-\end{equation}</p>
-<p>则有</p>
-<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
-\left.\begin{a…'>\begin{equation}
+\end{equation}\]</span></p>
+<p>则有 <span class="math display">\[\begin{equation}
 \left.\begin{array}{r}
-\displaystyle a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
-\displaystyle a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#039;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#039;)
-\end{equation}</p>
-<p>事实上，同样可以选取其他归一化方法，使得<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>N</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{N}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
-<h3 id="协变对易关系"><a class="markdownIt-Anchor" href="#协变对易关系"></a> 协变对易关系</h3>
-<h3 id="复标量场"><a class="markdownIt-Anchor" href="#复标量场"></a> 复标量场</h3>
+\displaystyle
+a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
+\displaystyle
+a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
+\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)
+\end{equation}\]</span></p>
+<p>事实上，同样可以选取其他归一化方法，使得<span
+class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
+<h3 id="协变对易关系">协变对易关系</h3>
+<h3 id="复标量场">复标量场</h3>
 
     </div>
 
@@ -431,7 +398,7 @@ a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"all","perpage":false,"cdn":"//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
