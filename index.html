@@ -85,7 +85,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">0</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">7</span></a></li>
   </ul>
 </nav>
 
@@ -124,13 +124,19 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
-        <span class="site-state-item-name">标签</span>
+          <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -199,7 +205,20 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-02-28 13:30:00 / 修改时间：16:56:45" itemprop="dateCreated datePublished" datetime="2024-02-28T13:30:00+08:00">2024-02-28</time>
+      <time title="创建时间：2024-02-28 13:30:00 / 修改时间：17:13:40" itemprop="dateCreated datePublished" datetime="2024-02-28T13:30:00+08:00">2024-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
+        </span>
     </span>
 
   
@@ -213,13 +232,16 @@
     
     <div class="post-body" itemprop="articleBody">
           <p><strong>向量场的交换</strong></p>
-<p>设<span class="math inline">\(\bm{u},\,\bm{v}\)</span>为向量场，则有
-<span class="math display">\[\begin{equation}
+<p>设<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold-italic">u</mi><mo separator="true">,</mo><mtext> </mtext><mi mathvariant="bold-italic">v</mi></mrow><annotation encoding="application/x-tex">\bm{u},\,\bm{v}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.63888em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">u</span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.03704em;">v</span></span></span></span></span></span>为向量场，则有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+[\bm{u},\,\bm{…'>\begin{equation}
 [\bm{u},\,\bm{v}](f)=\bm{u}(\bm{v}(f))-\bm{v}(\bm{u}(f))
-\end{equation}\]</span></p>
-<p>证明： <span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>证明：</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+[u,\,v]^{i}=u^…'>\begin{equation}
 [u,\,v]^{i}=u^{i}\partial_{j}v^{i}-v^{i}\partial_{j}u^{i}
-\end{equation}\]</span></p>
+\end{equation}</p>
 <p><strong>演化算符</strong></p>
 
       
@@ -283,7 +305,24 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 16:57:20" itemprop="dateModified" datetime="2024-02-28T16:57:20+08:00">2024-02-28</time>
+      <time title="修改时间：2024-02-28 17:13:38" itemprop="dateModified" datetime="2024-02-28T17:13:38+08:00">2024-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">论文笔记</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AE%BA%E6%96%87%E7%AC%94%E8%AE%B0/%E9%87%8F%E5%AD%90%E4%BF%A1%E6%81%AF/" itemprop="url" rel="index"><span itemprop="name">量子信息</span></a>
+        </span>
     </span>
 
   
@@ -296,232 +335,84 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="开放量子系统与lindblad主方程">开放量子系统与Lindblad主方程</h2>
-<p>Schrödinger方程描述封闭量子系统的动力学演化，其概率流密度<span
-class="math inline">\(\boldsymbol{j}(\vec{r},\,t)\)</span>满足守恒方程
-<span class="math display">\[\begin{equation}
-\frac{\partial}{\partial
-t}|\Psi(\vec{r},\,t)|^{2}+\nabla\cdot\boldsymbol{j}=0
-\end{equation}\]</span> 代表封闭系统的粒子数守恒，不存在泵浦或损耗。</p>
-<p>然而实际研究中可能需要处理开放量子系统，亦即系统与环境存在相互作用，研究开放系统的方法有Lindblad主方程(master
-equation)、福克-普朗克方程(Fokker-Planck)、量子朗之万方程(Herisenberg-Langevin)等，我们介绍Lindblad主方程。</p>
-<h3 id="von-neumann方程">von Neumann方程</h3>
-<p>假设系统<span
-class="math inline">\(S\)</span>(ystem)处于热平衡环境中，环境<span
-class="math inline">\(E\)</span>(nvironment)可以视为一个粒子数远大于系统的热库<span
-class="math inline">\(R\)</span>(eservoir)或热浴<span
-class="math inline">\(B\)</span>(ath)，从而系统与环境的相互作用对环境的影响近似为零。</p>
-<p>不妨记系统<span
-class="math inline">\(\mathcal{H}_{S}\)</span>的密度算符为<span
-class="math inline">\(\hat{\rho}(t)\)</span>，体系<span
-class="math inline">\(\mathcal{H}_{S}\otimes\mathcal{H}_{R}\)</span>的密度算符为<span
-class="math inline">\(\hat{\chi}(t)\)</span>，我们关心系统的演化，可以通过<span
-class="math inline">\(\hat{\chi}(t)\)</span>对环境<span
-class="math inline">\(\mathcal{H}_{R}\)</span>求迹得到 <span
-class="math display">\[\begin{equation}
+          <h2 id="开放量子系统与lindblad主方程"><a class="markdownIt-Anchor" href="#开放量子系统与lindblad主方程"></a> 开放量子系统与Lindblad主方程</h2>
+<p>Schrödinger方程描述封闭量子系统的动力学演化，其概率流密度<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="bold-italic">j</mi><mo stretchy="false">(</mo><mover accent="true"><mi>r</mi><mo>⃗</mo></mover><mo separator="true">,</mo><mtext> </mtext><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\boldsymbol{j}(\vec{r},\,t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol" style="margin-right:0.0622em;">j</span></span></span><span class="mopen">(</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.17994em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span>满足守恒方程</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\frac{\partial…'>\begin{equation}
+\frac{\partial}{\partial t}|\Psi(\vec{r},\,t)|^{2}+\nabla\cdot\boldsymbol{j}=0
+\end{equation}</p>
+<p>代表封闭系统的粒子数守恒，不存在泵浦或损耗。</p>
+<p>然而实际研究中可能需要处理开放量子系统，亦即系统与环境存在相互作用，研究开放系统的方法有Lindblad主方程(master equation)、福克-普朗克方程(Fokker-Planck)、量子朗之万方程(Herisenberg-Langevin)等，我们介绍Lindblad主方程。</p>
+<h3 id="von-neumann方程"><a class="markdownIt-Anchor" href="#von-neumann方程"></a> von Neumann方程</h3>
+<p>假设系统<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>(ystem)处于热平衡环境中，环境<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span></span></span></span>(nvironment)可以视为一个粒子数远大于系统的热库<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>(eservoir)或热浴<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span>(ath)，从而系统与环境的相互作用对环境的影响近似为零。</p>
+<p>不妨记系统<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="script">H</mi><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal{H}_{S}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的密度算符为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>ρ</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{\rho}(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">ρ</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span>，体系<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="script">H</mi><mi>S</mi></msub><mo>⊗</mo><msub><mi mathvariant="script">H</mi><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal{H}_{S}\otimes\mathcal{H}_{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⊗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的密度算符为<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>χ</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{\chi}(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">χ</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span>，我们关心系统的演化，可以通过<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover accent="true"><mi>χ</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\hat{\chi}(t)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">χ</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mclose">)</span></span></span></span>对环境<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="script">H</mi><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\mathcal{H}_{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathcal" style="margin-right:0.00965em;">H</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>求迹得到</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{\rho}(t)=…'>\begin{equation}
 \hat{\rho}(t)=\mathrm{Tr}_{R}\,\hat{\chi}(t)
-\end{equation}\]</span></p>
-<p>系统和环境组成的体系<span class="math inline">\((S\oplus
-R)\)</span>可以视为孤立系统，其Hamiltonian记为 <span
-class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>系统和环境组成的体系<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>S</mi><mo>⊕</mo><mi>R</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(S\oplus R)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">)</span></span></span></span>可以视为孤立系统，其Hamiltonian记为</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{H}=\hat{H…'>\begin{equation}
 \hat{H}=\hat{H}_{S}+\hat{H}_{R}+\hat{H}_{SR}
-\end{equation}\]</span></p>
-<p>此处<span
-class="math inline">\(H_{S},\,H_{R}\)</span>分别代表系统与环境的自由演化，<span
-class="math inline">\(\hat{H}_{SR}\)</span>代表二者的相互作用。从而有von
-Neumann方程 <span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>此处<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>S</mi></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>H</mi><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">H_{S},\,H_{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.08125em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>分别代表系统与环境的自由演化，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mrow><mi>S</mi><mi>R</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\hat{H}_{SR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>代表二者的相互作用。从而有von Neumann方程</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\frac{\mathrm{…'>\begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\hat{\chi}(t)=\frac{1}{\mathrm{i}\hbar}[\hat{H},\,\hat{\chi}(t)]
-\end{equation}\]</span></p>
-<p>转换到Dirac绘景（相互作用绘景），选取<span
-class="math inline">\(\hat{H}_{0}=\hat{H}_{S}+\hat{H}_{R}\)</span>，则有
-<span class="math display">\[\begin{align}
+\end{equation}</p>
+<p>转换到Dirac绘景（相互作用绘景），选取<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mn>0</mn></msub><mo>=</mo><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mi>S</mi></msub><mo>+</mo><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">\hat{H}_{0}=\hat{H}_{S}+\hat{H}_{R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，则有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\hat{\chi}^{(I…'>\begin{align}
 \hat{\chi}^{(I)}(t)&amp;=e^{(\mathrm{i}/\hbar)\hat{H}_{0}t}\hat{\chi}(t)e^{-(\mathrm{i}/\hbar)\hat{H}_{0}t}\\
 \hat{H}_{SR}^{(I)}(t)&amp;=e^{(\mathrm{i}/\hbar)\hat{H}_{0}t}\hat{H}_{SR}(t)e^{-(\mathrm{i}/\hbar)\hat{H}_{0}t}
-\end{align}\]</span></p>
-<p>上述von Neumann方程转化为 <span
-class="math display">\[\begin{equation}
+\end{align}</p>
+<p>上述von Neumann方程转化为</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\frac{\mathrm{…'>\begin{equation}
 \frac{\mathrm{d}}{\mathrm{d}t}\hat{\chi}^{(I)}(t)=\frac{1}{\mathrm{i}\hbar}[\hat{H}_{SR}^{(I)}(t),\,\hat{\chi}^{(I)}(t)]
-\end{equation}\]</span></p>
-<h3 id="系统与环境的相互作用算符">系统与环境的相互作用算符</h3>
-<p>求解演化方程(7)必须得到<span
-class="math inline">\(\hat{H}_{SR}\)</span>的具体形式，我们假设环境是电磁场或者晶体中的声子场，从而其Hamiltonian可以表示为一系列谐振子的线性组合
-<span class="math display">\[\begin{equation}
+\end{equation}</p>
+<h3 id="系统与环境的相互作用算符"><a class="markdownIt-Anchor" href="#系统与环境的相互作用算符"></a> 系统与环境的相互作用算符</h3>
+<p>求解演化方程(7)必须得到<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mrow><mi>S</mi><mi>R</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\hat{H}_{SR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的具体形式，我们假设环境是电磁场或者晶体中的声子场，从而其Hamiltonian可以表示为一系列谐振子的线性组合</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{H}_{R}=\s…'>\begin{equation}
 \hat{H}_{R}=\sum_{k}{\Omega_{k}\hat{\Gamma}_{k}^{\dagger}\hat{\Gamma}_{k}}
-\end{equation}\]</span></p>
-<p>此处频率<span class="math inline">\(\Omega_{k}\)</span>随着模式<span
-class="math inline">\(k\)</span>而变化，<span
-class="math inline">\(\hat{\Gamma}_{k}\)</span>是对应的Boson算符。从而相互作用可以表示为系统算符<span
-class="math inline">\(\hat{s}_{i}\)</span>与环境算符<span
-class="math inline">\(\Gamma_{i}\)</span>的线性组合 <span
-class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>此处频率<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Ω</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\Omega_{k}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">Ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>随着模式<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span></span></span></span>而变化，<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi mathvariant="normal">Γ</mi><mo>^</mo></mover><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\hat{\Gamma}_{k}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">Γ</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>是对应的Boson算符。从而相互作用可以表示为系统算符<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>s</mi><mo>^</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\hat{s}_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">s</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>与环境算符<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Γ</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\Gamma_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">Γ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的线性组合</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{H}_{SR}=\…'>\begin{equation}
 \hat{H}_{SR}=\hbar\sum_{i}{\big(\hat{s}_{i}^{\dagger}\hat{\Gamma}_{i}+\hat{s}_{i}\hat{\Gamma}_{i}^{\dagger}\big)}
-\end{equation}\]</span></p>
-<p>变换到Dirac绘景，则有 <span class="math display">\[\begin{align}
+\end{equation}</p>
+<p>变换到Dirac绘景，则有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\hat{H}_{SR}^{…'>\begin{align}
 \hat{H}_{SR}^{(I)}(t)&amp;=\hbar\sum_{i}{e^{(\mathrm{i}/\hbar)(\hat{H}_{S}+\hat{H}_{R})t}\big(\hat{s}_{i}^{\dagger}\hat{\Gamma}_{i}+\hat{s}_{i}\hat{\Gamma}_{i}^{\dagger}\big)e^{-(\mathrm{i}/\hbar)(\hat{H}_{S}+\hat{H}_{R})t}}\\
-&amp;=\hbar\sum_{i}{\big(e^{(\mathrm{i}/\hbar)\hat{H}_{S}t}\hat{s}_{i}^{\dagger}e^{-(\mathrm{i}/\hbar)\hat{H}_{S}t}\big)\big(e^{(\mathrm{i}/\hbar)\hat{H}_{R}t}\hat{\Gamma}_{i}e^{-(\mathrm{i}/\hbar)\hat{H}_{R}t}\big)}+h.
-c.\\
+&amp;=\hbar\sum_{i}{\big(e^{(\mathrm{i}/\hbar)\hat{H}_{S}t}\hat{s}_{i}^{\dagger}e^{-(\mathrm{i}/\hbar)\hat{H}_{S}t}\big)\big(e^{(\mathrm{i}/\hbar)\hat{H}_{R}t}\hat{\Gamma}_{i}e^{-(\mathrm{i}/\hbar)\hat{H}_{R}t}\big)}+h. c.\\
 &amp;=\hbar\sum_{i}{\big(\hat{s}_{i}^{\dagger(I)}\hat{\Gamma}_{i}^{(I)}+\hat{s}_{i}^{(I)}\hat{\Gamma}_{i}^{\dagger(I)}\big)}
-\end{align}\]</span></p>
-<p>我们假设存在某“初始”时刻系统与环境没有关联，从而体系的密度算符可以分解为
-<span class="math display">\[\begin{equation}
+\end{align}</p>
+<p>我们假设存在某“初始”时刻系统与环境没有关联，从而体系的密度算符可以分解为</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{\chi}^{(I…'>\begin{equation}
 \hat{\chi}^{(I)}(0)=\hat{\chi}(0)=\hat{\rho}(0)\otimes\hat{R}_{0}
-\end{equation}\]</span></p>
-<p>此处<span
-class="math inline">\(\hat{R}_{0}\)</span>是环境初始状态的密度算符，一般假设其满足条件
-<span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>此处<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>R</mi><mo>^</mo></mover><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\hat{R}_{0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>是环境初始状态的密度算符，一般假设其满足条件</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\mathrm{Tr}_{R…'>\begin{equation}
 \mathrm{Tr}_{R}{\hat{H}_{SR}^{(I)}}
-\end{equation}\]</span></p>
-<h3 id="born近似弱耦合近似">Born近似/弱耦合近似</h3>
+\end{equation}</p>
+<h3 id="born近似弱耦合近似"><a class="markdownIt-Anchor" href="#born近似弱耦合近似"></a> Born近似/弱耦合近似</h3>
 <p>随着体系演化，系统与环境由于相互作用产生关联，我们假设二者的相互作用较弱</p>
-<p>此处演化方程(7)无法直接求解，倘若将<span
-class="math inline">\(\hat{H}_{SR}\)</span>视为微扰，则有迭代解法。方程(7)积分得到
-<span class="math display">\[\begin{equation}
+<p>此处演化方程(7)无法直接求解，倘若将<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>H</mi><mo>^</mo></mover><mrow><mi>S</mi><mi>R</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\hat{H}_{SR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0967699999999998em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9467699999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.19444em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span><span class="mord mathnormal mtight" style="margin-right:0.00773em;">R</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>视为微扰，则有迭代解法。方程(7)积分得到</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\hat{\chi}^{(I…'>\begin{equation}
 \hat{\chi}^{(I)}(t)=\hat{\chi}^{(I)}(0)+\frac{1}{\mathrm{i}\hbar}\int_{0}^{t}{[\hat{H}_{SR}^{(I)}(\tau),\,\hat{\chi}^{(I)}(\tau)]\,\mathrm{d}\tau}
-\end{equation}\]</span></p>
+\end{equation}</p>
 <p>Proca方程</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Polaris Yeh">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="叶衍的笔记本">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 叶衍的笔记本">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/LecNote-Quantum%20Field%20Theory%20(2)/" class="post-title-link" itemprop="url">[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-10-20 13:30:00" itemprop="dateCreated datePublished" datetime="2023-10-20T13:30:00+08:00">2023-10-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 16:57:28" itemprop="dateModified" datetime="2024-02-28T16:57:28+08:00">2024-02-28</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <blockquote class="blockquote-center">
-<p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p>
-
-</blockquote>
-<h3 id="klein-gordon方程">Klein-Gordon方程</h3>
-<p><span class="math display">\[\begin{equation}
-\mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})
-\end{equation}\]</span></p>
-<p>正则动量： <span class="math display">\[\begin{equation}
-\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{equation}
-\mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)
-\end{equation}\]</span></p>
-<p>平面波解： <span class="math display">\[\begin{equation}
-\phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}\]</span></p>
-<p>此处<span
-class="math inline">\(\bar{N}_{p}\)</span>为归一化常数，<span
-class="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>。</p>
-<p>计算可得 <span class="math display">\[\begin{equation}
-\pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}\]</span></p>
-<p>则有 <span class="math display">\[\begin{align}
-\omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\
-\omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}
-\end{align}\]</span></p>
-<p>作Fourier逆变换得到 <span class="math display">\[\begin{align}
-(2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\
-(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}\]</span></p>
-<p>从而有 <span class="math display">\[\begin{align}
-a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
-a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}\]</span></p>
-<p>此处<span
-class="math inline">\(\bar{A}_{p}\)</span>为归一化常数，满足关系 <span
-class="math display">\[\begin{equation}
-\bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}
-\end{equation}\]</span></p>
-<p>注意到正则对易关系 <span class="math display">\[\begin{equation}
-[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)
-\end{equation}\]</span></p>
-<p>此处 <span class="math display">\[\begin{equation}
-\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
-\end{equation}\]</span></p>
-<p>解得产生、湮灭算符的对易关系 <span
-class="math display">\[\begin{align}
-[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
-&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
-&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\
-&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)
-\end{align}\]</span></p>
-<p>注意到，倘若我们选取归一化常数 <span
-class="math display">\[\begin{equation}
-\bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}
-\end{equation}\]</span></p>
-<p>则有 <span class="math display">\[\begin{equation}
-\left.\begin{array}{r}
-\displaystyle
-a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
-\displaystyle
-a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)
-\end{equation}\]</span></p>
-<p>事实上，同样可以选取其他归一化方法，使得<span
-class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
-<h3 id="协变对易关系">协变对易关系</h3>
 
       
     </div>
@@ -584,7 +475,20 @@ class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 16:57:34" itemprop="dateModified" datetime="2024-02-28T16:57:34+08:00">2024-02-28</time>
+      <time title="修改时间：2024-02-28 17:13:31" itemprop="dateModified" datetime="2024-02-28T17:13:31+08:00">2024-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
+        </span>
     </span>
 
   
@@ -601,26 +505,28 @@ class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值�
 <p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p>
 
 </blockquote>
-<h3 id="dirac方程">Dirac方程</h3>
-<h3 id="实标量场">实标量场</h3>
-<p><span class="math display">\[\begin{align}
+<h3 id="dirac方程"><a class="markdownIt-Anchor" href="#dirac方程"></a> Dirac方程</h3>
+<h3 id="实标量场"><a class="markdownIt-Anchor" href="#实标量场"></a> 实标量场</h3>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+&amp;\bar{u}_{r}(\…'>\begin{align}
 &amp;\bar{u}_{r}(\vec{p})(\gamma^{\mu}\vec{p}_{\mu}-m)=0\\
-\Rightarrow\
-&amp;\bar{u}_{r}(\vec{p})\gamma^{\mu}\vec{p}_{\mu}=m\bar{u}_{r}(\vec{p})
-\end{align}\]</span></p>
-<h3 id="传播子">传播子</h3>
-<p><span class="math display">\[\begin{equation}
+\Rightarrow\ &amp;\bar{u}_{r}(\vec{p})\gamma^{\mu}\vec{p}_{\mu}=m\bar{u}_{r}(\vec{p})
+\end{align}</p>
+<h3 id="传播子"><a class="markdownIt-Anchor" href="#传播子"></a> 传播子</h3>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\mathrm{i}\par…'>\begin{equation}
 \mathrm{i}\partial\Psi(\alpha)=0
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+P_{L}\mathrm{i…'>\begin{equation}
 P_{L}\mathrm{i}\partial\Psi=0\quad\Rightarrow\quad\mathrm{i}\partial\!\!\!/\Psi_{L}=0
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{align}
-\mathrm{i}\partial\!\!\!/\Psi_{L}=\mathrm{i}\gamma^{\mu}\partial_{\mu}\Psi_{L}=\mathrm{i}\left\lgroup\begin{array}{c
-c}
+\end{equation}</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\mathrm{i}\par…'>\begin{align}
+\mathrm{i}\partial\!\!\!/\Psi_{L}=\mathrm{i}\gamma^{\mu}\partial_{\mu}\Psi_{L}=\mathrm{i}\left\lgroup\begin{array}{c c}
 c
 \end{array}\right\rgroup
-\end{align}\]</span></p>
+\end{align}</p>
 
       
     </div>
@@ -665,7 +571,7 @@ c
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/LecNote-Quantum%20Field%20Theory%20(3)/" class="post-title-link" itemprop="url">[Phys] 量子场论笔记(4) 狄拉克(Dirac)场</a>
+          <a href="/2023/LecNote-Quantum%20Field%20Theory%20(3)/" class="post-title-link" itemprop="url">[Phys] 量子场论笔记(3) 克莱因-戈登(Klein-Gordon)场</a>
         </h2>
 
         <div class="post-meta-container">
@@ -683,7 +589,20 @@ c
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 16:57:32" itemprop="dateModified" datetime="2024-02-28T16:57:32+08:00">2024-02-28</time>
+      <time title="修改时间：2024-02-28 17:13:34" itemprop="dateModified" datetime="2024-02-28T17:13:34+08:00">2024-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
+        </span>
     </span>
 
   
@@ -700,71 +619,104 @@ c
 <p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p>
 
 </blockquote>
-<h3 id="klein-gordon方程">Klein-Gordon方程</h3>
-<h3 id="实标量场">实标量场</h3>
-<p><span class="math display">\[\begin{equation}
+<h3 id="klein-gordon方程"><a class="markdownIt-Anchor" href="#klein-gordon方程"></a> Klein-Gordon方程</h3>
+<h3 id="实标量场"><a class="markdownIt-Anchor" href="#实标量场"></a> 实标量场</h3>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\mathcal{L}(\p…'>\begin{equation}
 \mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})
-\end{equation}\]</span></p>
-<p>正则动量： <span class="math display">\[\begin{equation}
-\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)
-\end{equation}\]</span></p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>正则动量：<br />
+\begin{equation}<br />
+\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)<br />
+\end{equation}</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\mathcal{H}(\p…'>\begin{equation}
 \mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)
-\end{equation}\]</span></p>
-<p>平面波解： <span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>平面波解：</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\phi(t,\,\vec{…'>\begin{equation}
 \phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}\]</span></p>
-<p>此处 <span class="math inline">\(\bar{N}_{p}\)</span> 为归一化常数，
-<span class="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>
-。</p>
-<p>计算可得 <span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>此处 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>N</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{N}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 为归一化常数， <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mi>p</mi></msub><mo>=</mo><msqrt><mrow><msup><mover accent="true"><mi>p</mi><mo>⃗</mo></mover><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">ω</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.2821659999999999em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578340000000001em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">p</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.15216em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span style="top:-2.917834em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2821659999999999em;"><span></span></span></span></span></span></span></span></span> 。</p>
+<p>计算可得</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\pi(t,\,\vec{x…'>\begin{equation}
 \pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
-\end{equation}\]</span></p>
-<p>则有 <span class="math display">\[\begin{align}
+\end{equation}</p>
+<p>则有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+\omega_{p}\phi…'>\begin{align}
 \omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\
 \omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}
-\end{align}\]</span></p>
-<p>作Fourier逆变换得到 <span class="math display">\[\begin{align}
+\end{align}</p>
+<p>作Fourier逆变换得到</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+(2\bar{N}_{p}\…'>\begin{align}
 (2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\
 (2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}\]</span></p>
-<p>从而有 <span class="math display">\[\begin{align}
+\end{align}</p>
+<p>从而有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+a_{p}=\bar{A}_…'>\begin{align}
 a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
 a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{align}\]</span></p>
-<p>此处 <span class="math inline">\(\bar{A}_{p}\)</span>
-为归一化常数，满足关系 <span class="math display">\[\begin{equation}
+\end{align}</p>
+<p>此处 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>A</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{A}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">A</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.11110999999999999em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span> 为归一化常数，满足关系</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\bar{A}_{p}\ba…'>\begin{equation}
 \bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}
-\end{equation}\]</span></p>
-<p>注意到正则对易关系 <span class="math display">\[\begin{equation}
-[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)
-\end{equation}\]</span></p>
-<p>此处 <span class="math display">\[\begin{equation}
-\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
-\end{equation}\]</span></p>
-<p>解得产生、湮灭算符的对易关系 <span
-class="math display">\[\begin{align}
-[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
-&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
-&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\
-&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)
-\end{align}\]</span></p>
-<p>注意到，倘若我们选取归一化常数 <span
-class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>注意到正则对易关系</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+[\phi(t,\,\vec…'>\begin{equation}
+[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#039;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#039;)
+\end{equation}</p>
+<p>此处</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\delta(\vec{x}…'>\begin{equation}
+\delta(\vec{x}-\vec{x}&#039;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
+\end{equation}</p>
+<p>解得产生、湮灭算符的对易关系</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: align at position 7: \begin{̲a̲l̲i̲g̲n̲}̲
+[a_{p},\,a_{p&#039;…'>\begin{align}
+[a_{p},\,a_{p&#039;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#039;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#039;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#039;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#039;}t-\vec{p&#039;}\cdot\vec{x&#039;})}}\\
+&amp;=(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#039;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#039;}t-\vec{p&#039;}\cdot\vec{x&#039;})}}\\
+&amp;=(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#039;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#039;)\cdot\vec{x}}}\\
+&amp;=(2\pi)^{3}(\omega_{p&#039;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#039;}\delta^{3}(\vec{p}-\vec{p}&#039;)
+\end{align}</p>
+<p>注意到，倘若我们选取归一化常数</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\bar{N}_{p}=\b…'>\begin{equation}
 \bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}
-\end{equation}\]</span></p>
-<p>则有 <span class="math display">\[\begin{equation}
+\end{equation}</p>
+<p>则有</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: No such environment: equation at position 7: \begin{̲e̲q̲u̲a̲t̲i̲o̲n̲}̲
+\left.\begin{a…'>\begin{equation}
 \left.\begin{array}{r}
-\displaystyle
-a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
-\displaystyle
-a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
-\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)
-\end{equation}\]</span></p>
-<p>事实上，同样可以选取其他归一化方法，使得<span
-class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
-<h3 id="协变对易关系">协变对易关系</h3>
-<h3 id="复标量场">复标量场</h3>
+\displaystyle a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
+\displaystyle a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
+\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#039;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#039;)
+\end{equation}</p>
+<p>事实上，同样可以选取其他归一化方法，使得<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>N</mi><mo>ˉ</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\bar{N}_{p}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.106218em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mord">ˉ</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
+<h3 id="协变对易关系"><a class="markdownIt-Anchor" href="#协变对易关系"></a> 协变对易关系</h3>
+<h3 id="复标量场"><a class="markdownIt-Anchor" href="#复标量场"></a> 复标量场</h3>
 
       
     </div>
@@ -827,7 +779,20 @@ class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 16:58:44" itemprop="dateModified" datetime="2024-02-28T16:58:44+08:00">2024-02-28</time>
+      <time title="修改时间：2024-02-28 17:13:36" itemprop="dateModified" datetime="2024-02-28T17:13:36+08:00">2024-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
+        </span>
     </span>
 
   
@@ -846,17 +811,30 @@ class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值�
 </blockquote>
 <p><strong>基本假设</strong></p>
 <ul>
-<li><p>幺正性</p></li>
-<li><p>Lorentz协变性</p></li>
+<li>
+<p>幺正性</p>
+</li>
+<li>
+<p>Lorentz协变性</p>
+</li>
 </ul>
-<h3 id="符号约定">符号约定</h3>
-<p>Lorentz时空的时空坐标四矢量<span
-class="math inline">\(x^{\mu}=(x^{0},\,x^{1},\,x^{2},\,x^{3})=(t,\,\vec{x})\)</span>，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariant
-vector)，下指标矢量称为协变矢量(covariant vector)，例如<span
-class="math inline">\(x_{\mu}=\{x_{0},\,x_{1},\,x_{2},\,x_{3}\}=(t,\,-\vec{x})\)</span></p>
-<h3 id="noether定理与守恒定律">Noether定理与守恒定律</h3>
+<h3 id="符号约定"><a class="markdownIt-Anchor" href="#符号约定"></a> 符号约定</h3>
+<p>Lorentz时空的时空坐标四矢量<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>μ</mi></msup><mo>=</mo><mo stretchy="false">(</mo><msup><mi>x</mi><mn>0</mn></msup><mo separator="true">,</mo><mtext> </mtext><msup><mi>x</mi><mn>1</mn></msup><mo separator="true">,</mo><mtext> </mtext><msup><mi>x</mi><mn>2</mn></msup><mo separator="true">,</mo><mtext> </mtext><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>t</mi><mo separator="true">,</mo><mtext> </mtext><mover accent="true"><mi>x</mi><mo>⃗</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x^{\mu}=(x^{0},\,x^{1},\,x^{2},\,x^{3})=(t,\,\vec{x})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">μ</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.20772em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariant vector)，下指标矢量称为协变矢量(covariant vector)，例如<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>μ</mi></msub><mo>=</mo><mo stretchy="false">{</mo><msub><mi>x</mi><mn>0</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>x</mi><mn>1</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>x</mi><mn>2</mn></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>x</mi><mn>3</mn></msub><mo stretchy="false">}</mo><mo>=</mo><mo stretchy="false">(</mo><mi>t</mi><mo separator="true">,</mo><mtext> </mtext><mo>−</mo><mover accent="true"><mi>x</mi><mo>⃗</mo></mover><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">x_{\mu}=\{x_{0},\,x_{1},\,x_{2},\,x_{3}\}=(t,\,-\vec{x})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">μ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">−</span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.714em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">x</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.20772em;"><span class="overlay" style="height:0.714em;width:0.471em;"><svg width='0.471em' height='0.714em' style='width:0.471em' viewBox='0 0 471 714' preserveAspectRatio='xMinYMin'><path d='M377 20c0-5.333 1.833-10 5.5-14S391 0 397 0c4.667 0 8.667 1.667 12 5
+3.333 2.667 6.667 9 10 19 6.667 24.667 20.333 43.667 41 57 7.333 4.667 11
+10.667 11 18 0 6-1 10-3 12s-6.667 5-14 9c-28.667 14.667-53.667 35.667-75 63
+-1.333 1.333-3.167 3.5-5.5 6.5s-4 4.833-5 5.5c-1 .667-2.5 1.333-4.5 2s-4.333 1
+-7 1c-4.667 0-9.167-1.833-13.5-5.5S337 184 337 178c0-12.667 15.667-32.333 47-59
+H213l-171-1c-8.667-6-13-12.333-13-19 0-4.667 4.333-11.333 13-20h359
+c-16-25.333-24-45-24-59z'/></svg></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<h3 id="noether定理与守恒定律"><a class="markdownIt-Anchor" href="#noether定理与守恒定律"></a> Noether定理与守恒定律</h3>
 <p>构造描述物理体系的Lagrangian应该正确地反映体系具有的守恒定律，Noether定理说明，对于每一个物理体系的连续对称性（指保持其作用量和运动方程不变的某种连续变换），存在一项守恒定律。</p>
-<p>假设体系的作用量<span class="math inline">\(S\)</span>在</p>
+<p>假设体系的作用量<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>在</p>
 
       
     </div>
