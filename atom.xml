@@ -6,7 +6,7 @@
   <link href="http://polarismegrez.github.io/atom.xml" rel="self"/>
   
   <link href="http://polarismegrez.github.io/"/>
-  <updated>2024-02-28T08:13:17.983Z</updated>
+  <updated>2024-02-28T08:49:26.119Z</updated>
   <id>http://polarismegrez.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>[Phys] 玻色-爱因斯坦凝聚-原子的冷却和囚禁</title>
+    <title>[Phys] 玻色-爱因斯坦凝聚(1) 原子的冷却和囚禁</title>
     <link href="http://polarismegrez.github.io/2024/Phys-Bose-Einstein%20Condensation%20(1)/"/>
     <id>http://polarismegrez.github.io/2024/Phys-Bose-Einstein%20Condensation%20(1)/</id>
     <published>2024-02-28T05:30:00.000Z</published>
-    <updated>2024-02-28T08:13:17.983Z</updated>
+    <updated>2024-02-28T08:49:26.119Z</updated>
     
     <content type="html"><![CDATA[<p><strong>向量场的交换</strong></p><p>设<span class="math inline">\(\bm{u},\,\bm{v}\)</span>为向量场，则有<span class="math display">\[\begin{equation}[\bm{u},\,\bm{v}](f)=\bm{u}(\bm{v}(f))-\bm{v}(\bm{u}(f))\end{equation}\]</span></p><p>证明： <span class="math display">\[\begin{equation}[u,\,v]^{i}=u^{i}\partial_{j}v^{i}-v^{i}\partial_{j}u^{i}\end{equation}\]</span></p><p><strong>演化算符</strong></p>]]></content>
     
