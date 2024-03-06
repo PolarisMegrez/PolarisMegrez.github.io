@@ -20,29 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"polarismegrez.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.14.1","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   基本假设  幺正性 Lorentz协变性  符号约定 Lorentz时空的时空坐标四矢量\(x^{\mu}&#x3D;(x^{0},\,x^{1},\,x^{2},\,x^{3})&#x3D;(t,\,\vec{x})\)，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariant ve">
+    <meta name="description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   Klein-Gordon方程 \[\begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation}\] 正则动量： \[\begin{equation}">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Phys] 量子场论笔记-绪论">
-<meta property="og:url" content="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/index.html">
+<meta property="og:title" content="[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场">
+<meta property="og:url" content="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/index.html">
 <meta property="og:site_name" content="叶衍的笔记本">
-<meta property="og:description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   基本假设  幺正性 Lorentz协变性  符号约定 Lorentz时空的时空坐标四矢量\(x^{\mu}&#x3D;(x^{0},\,x^{1},\,x^{2},\,x^{3})&#x3D;(t,\,\vec{x})\)，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariant ve">
+<meta property="og:description" content="不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.   Klein-Gordon方程 \[\begin{equation} \mathcal{L}(\phi)&#x3D;\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2}) \end{equation}\] 正则动量： \[\begin{equation}">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-09T05:30:00.000Z">
-<meta property="article:modified_time" content="2024-02-28T09:29:36.362Z">
+<meta property="article:published_time" content="2023-10-20T05:30:00.000Z">
+<meta property="article:modified_time" content="2023-12-06T11:56:31.831Z">
 <meta property="article:author" content="Polaris Yeh">
-<meta property="article:tag" content="基础内容">
-<meta property="article:tag" content="量子场论">
+<meta property="article:tag" content="物理 笔记">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/">
+<link rel="canonical" href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/","path":"2023/LecNote-Quantum Field Theory (1)/","title":"[Phys] 量子场论笔记-绪论"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/","path":"2023/LecNote-Quantum Field Theory (2)/","title":"[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>[Phys] 量子场论笔记-绪论 | 叶衍的笔记本</title>
+<title>[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场 | 叶衍的笔记本</title>
   
 
 
@@ -116,7 +115,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%A6%E5%8F%B7%E7%BA%A6%E5%AE%9A"><span class="nav-number">1.</span> <span class="nav-text">符号约定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#noether%E5%AE%9A%E7%90%86%E4%B8%8E%E5%AE%88%E6%81%92%E5%AE%9A%E5%BE%8B"><span class="nav-number">2.</span> <span class="nav-text">Noether定理与守恒定律</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#klein-gordon%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">Klein-Gordon方程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%8F%E5%8F%98%E5%AF%B9%E6%98%93%E5%85%B3%E7%B3%BB"><span class="nav-number">2.</span> <span class="nav-text">协变对易关系</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -183,7 +182,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/">
+    <link itemprop="mainEntityOfPage" href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -196,12 +195,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="[Phys] 量子场论笔记-绪论 | 叶衍的笔记本">
+      <meta itemprop="name" content="[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场 | 叶衍的笔记本">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [Phys] 量子场论笔记-绪论
+          [Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场
         </h1>
 
         <div class="post-meta-container">
@@ -212,27 +211,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2023-10-09 13:30:00" itemprop="dateCreated datePublished" datetime="2023-10-09T13:30:00+08:00">2023-10-09</time>
+      <time title="创建时间：2023-10-20 13:30:00" itemprop="dateCreated datePublished" datetime="2023-10-20T13:30:00+08:00">2023-10-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-02-28 17:29:36" itemprop="dateModified" datetime="2024-02-28T17:29:36+08:00">2024-02-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">物理</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
-        </span>
+      <time title="修改时间：2023-12-06 19:56:31" itemprop="dateModified" datetime="2023-12-06T19:56:31+08:00">2023-12-06</time>
     </span>
 
   
@@ -249,19 +235,70 @@
 <p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p>
 
 </blockquote>
-<p><strong>基本假设</strong></p>
-<ul>
-<li><p>幺正性</p></li>
-<li><p>Lorentz协变性</p></li>
-</ul>
-<h3 id="符号约定">符号约定</h3>
-<p>Lorentz时空的时空坐标四矢量<span
-class="math inline">\(x^{\mu}=(x^{0},\,x^{1},\,x^{2},\,x^{3})=(t,\,\vec{x})\)</span>，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariant
-vector)，下指标矢量称为协变矢量(covariant vector)，例如<span
-class="math inline">\(x_{\mu}=\{x_{0},\,x_{1},\,x_{2},\,x_{3}\}=(t,\,-\vec{x})\)</span></p>
-<h3 id="noether定理与守恒定律">Noether定理与守恒定律</h3>
-<p>构造描述物理体系的Lagrangian应该正确地反映体系具有的守恒定律，Noether定理说明，对于每一个物理体系的连续对称性（指保持其作用量和运动方程不变的某种连续变换），存在一项守恒定律。</p>
-<p>假设体系的作用量<span class="math inline">\(S\)</span>在</p>
+<h3 id="klein-gordon方程">Klein-Gordon方程</h3>
+<p><span class="math display">\[\begin{equation}
+\mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})
+\end{equation}\]</span></p>
+<p>正则动量： <span class="math display">\[\begin{equation}
+\pi(x)=\frac{\partial\mathcal{L}}{\partial\dot{\phi}}=\dot{\phi}(x)
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+\mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)
+\end{equation}\]</span></p>
+<p>平面波解： <span class="math display">\[\begin{equation}
+\phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
+\end{equation}\]</span></p>
+<p>此处<span
+class="math inline">\(\bar{N}_{p}\)</span>为归一化常数，<span
+class="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>。</p>
+<p>计算可得 <span class="math display">\[\begin{equation}
+\pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}
+\end{equation}\]</span></p>
+<p>则有 <span class="math display">\[\begin{align}
+\omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\
+\omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}
+\end{align}\]</span></p>
+<p>作Fourier逆变换得到 <span class="math display">\[\begin{align}
+(2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\
+(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}
+\end{align}\]</span></p>
+<p>从而有 <span class="math display">\[\begin{align}
+a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
+a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
+\end{align}\]</span></p>
+<p>此处<span
+class="math inline">\(\bar{A}_{p}\)</span>为归一化常数，满足关系 <span
+class="math display">\[\begin{equation}
+\bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}
+\end{equation}\]</span></p>
+<p>注意到正则对易关系 <span class="math display">\[\begin{equation}
+[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)
+\end{equation}\]</span></p>
+<p>此处 <span class="math display">\[\begin{equation}
+\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}
+\end{equation}\]</span></p>
+<p>解得产生、湮灭算符的对易关系 <span
+class="math display">\[\begin{align}
+[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
+&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\
+&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\
+&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)
+\end{align}\]</span></p>
+<p>注意到，倘若我们选取归一化常数 <span
+class="math display">\[\begin{equation}
+\bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}
+\end{equation}\]</span></p>
+<p>则有 <span class="math display">\[\begin{equation}
+\left.\begin{array}{r}
+\displaystyle
+a_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\
+\displaystyle
+a_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}
+\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)
+\end{equation}\]</span></p>
+<p>事实上，同样可以选取其他归一化方法，使得<span
+class="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p>
+<h3 id="协变对易关系">协变对易关系</h3>
 
     </div>
 
@@ -271,21 +308,20 @@ class="math inline">\(x_{\mu}=\{x_{0},\,x_{1},\,x_{2},\,x_{3}\}=(t,\,-\vec{x})\)
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9/" rel="tag"># 基础内容</a>
-              <a href="/tags/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA/" rel="tag"># 量子场论</a>
+              <a href="/tags/%E7%89%A9%E7%90%86-%E7%AC%94%E8%AE%B0/" rel="tag"># 物理 笔记</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/LecNote-Quantum%20Field%20Theory%20(1).sync-conflict-20240229-223500-OI2KD5W/" rel="prev" title="[Phys] 量子场论笔记-绪论">
-                  <i class="fa fa-chevron-left"></i> [Phys] 量子场论笔记-绪论
+                <a href="/2023/LecNote-Quantum%20Field%20Theory%20(3).sync-conflict-20240229-223500-OI2KD5W/" rel="prev" title="[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场">
+                  <i class="fa fa-chevron-left"></i> [Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/LecNote-Quantum%20Field%20Theory%20(4).sync-conflict-20240229-223500-OI2KD5W/" rel="next" title="[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场">
-                  [Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场 <i class="fa fa-chevron-right"></i>
+                <a href="/2023/LecNote-Quantum%20Field%20Theory%20(3)/" rel="next" title="[Phys] 量子场论笔记(3) 克莱因-戈登(Klein-Gordon)场">
+                  [Phys] 量子场论笔记(3) 克莱因-戈登(Klein-Gordon)场 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

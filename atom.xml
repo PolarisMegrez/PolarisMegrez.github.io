@@ -6,7 +6,7 @@
   <link href="http://polarismegrez.github.io/atom.xml" rel="self"/>
   
   <link href="http://polarismegrez.github.io/"/>
-  <updated>2024-02-28T09:32:45.913Z</updated>
+  <updated>2024-03-06T13:40:28.885Z</updated>
   <id>http://polarismegrez.github.io/</id>
   
   <author>
@@ -20,18 +20,20 @@
     <title>[Phys] 玻色-爱因斯坦凝聚(1) 原子的冷却和囚禁</title>
     <link href="http://polarismegrez.github.io/2024/[Phys]%20Bose-Einstein%20Condensation%20(1)/"/>
     <id>http://polarismegrez.github.io/2024/[Phys]%20Bose-Einstein%20Condensation%20(1)/</id>
-    <published>2024-02-28T05:30:00.000Z</published>
-    <updated>2024-02-28T09:32:45.913Z</updated>
+    <published>2024-02-28T11:00:00.000Z</published>
+    <updated>2024-03-06T13:40:28.885Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>向量场的交换</strong></p><p>设<spanclass="math inline">\(\boldsymbol{u},\,\boldsymbol{v}\)</span>为向量场，则有<span class="math display">\[\begin{equation}[\boldsymbol{u},\,\boldsymbol{v}](f)=\boldsymbol{u}(\boldsymbol{v}(f))-\boldsymbol{v}(\boldsymbol{u}(f))\end{equation}\]</span></p><p>证明： <span class="math display">\[\begin{equation}[u,\,v]^{i}=u^{i}\partial_{j}v^{i}-v^{i}\partial_{j}u^{i}\end{equation}\]</span></p><p><strong>演化算符</strong></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="单原子的量子描述">单原子的量子描述</h3><p>原子由原子核与核外电子组成，其基本参数包括：</p><ul><li>原子序数<spanclass="math inline">\(Z\)</span>：等于质子数，或核外电子数</li><li>中子数<spanclass="math inline">\(N\)</span>：奇数为费米子，偶数为玻色子</li><li>原子质量<span class="math inline">\(M\)</span></li></ul><p>采取Born-Oppenheimer近似，电子绕核的运动满足空间旋转对称性，从而体系的总角动量是守恒量，记为<spanclass="math inline">\(\vec{F}\)</span>。总角动量<spanclass="math inline">\(\vec{F}\)</span>由电子轨道角动量<spanclass="math inline">\(\vec{L}\)</span>、自旋角动量<spanclass="math inline">\(\vec{S}\)</span>和原子核自旋角动量<spanclass="math inline">\(\vec{I}\)</span>构成，其耦合分为两步：</p><p><span class="math display">\[\begin{align}\vec{J}=\vec{L}+\vec{S}\\\vec{F}=\vec{J}+\vec{I}\end{align}\]</span></p><p>其中(1)式考虑电子自旋与轨道角动量耦合得到的原子能级结构称为<strong>精细能级结构</strong>，(2)式进一步考虑核自旋与电子角动量耦合得到的原子能级结构称为<strong>超精细能级结构</strong>。</p><div class="note info"><p>目前对多种原子气体实现了玻色-爱因斯坦凝聚，其中最典型的是碱金属原子，此种情形下BO近似应该视为二体等效方法，仅需对原子基本参数稍作修正（忽略高阶激发态）。</p></div><h4 id="类氢原子的hamiltonian">（类）氢原子的Hamiltonian</h4><p>我们以氢原子为例，考虑精细结构与超精细结构的Hamiltonian为：</p><p><span class="math display">\[\begin{equation}H=H_{0}+W_{F}+W_{HF}\end{equation}\]</span></p><p>其中</p><p><span class="math display">\[\begin{align}H_{0}&amp;=\frac{p^{2}}{2m}+V(r)\\V(r)&amp;=-\frac{e^{2}}{4\pi\varepsilon_{0}}\frac{1}{r}\end{align}\]</span></p><p>精细结构项为<a href="#fn1" class="footnote-ref" id="fnref1"role="doc-noteref"><sup>1</sup></a></p><p><span class="math display">\[\begin{align}W_{F}&amp;=W_{mv}+W_{SO}+W_{D}\end{align}\]</span></p><p>其中，相对论动能修正项为</p><p><span class="math display">\[\begin{align}W_{mv}&amp;=-\frac{p^{4}}{8m^{3}c^{2}}\end{align}\]</span></p><p>对于<spanclass="math inline">\(l\ne0\)</span>的情形，电子自旋-轨道角动量耦合项为</p><p><span class="math display">\[\begin{align}W_{SO}&amp;=\frac{1}{2m^{2}c^{2}}\frac{1}{r}\frac{\mathrm{d}V(r)}{\mathrm{d}r}\vec{L}\cdot\vec{S}\end{align}\]</span></p><p>对于<span class="math inline">\(l=0\)</span>的情形，Darwin项为</p><p><span class="math display">\[\begin{align}W_{D}&amp;=\frac{\hbar^{2}}{8m^{2}c^{2}}\Delta V(r)\end{align}\]</span></p><p>超精细结构项为<a href="#fn2" class="footnote-ref" id="fnref2"role="doc-noteref"><sup>2</sup></a></p><p><span class="math display">\[\begin{align}W_{HF}&amp;=W_{LI}+W_{SID}+W_{SIF}\end{align}\]</span></p><p>对于<spanclass="math inline">\(l\ne0\)</span>的情形，电子轨道角动量的磁偶极相互作用为</p><p><span class="math display">\[\begin{align}W_{LI}&amp;=-\frac{\mu_{0}}{4\pi}\frac{1}{r^{3}}\vec{M}_{L}\cdot\vec{M}_{I}\end{align}\]</span></p><p>电子自旋角动量的磁偶极相互作用为</p><p><span class="math display">\[\begin{align}W_{SID}&amp;=-\frac{\mu_{0}}{4\pi}\frac{1}{r^{3}}[3(\vec{M}_{S}\cdot\vec{n})(\vec{M}_{I}\cdot\vec{n})-\vec{M}_{S}\cdot\vec{M}_{I}]\end{align}\]</span></p><p>对于<spanclass="math inline">\(l=0\)</span>的情形，电子角动量的磁偶极相互作用为</p><p><span class="math display">\[\begin{align}W_{SIF}&amp;=-\frac{\mu_{0}}{4\pi}\frac{8\pi}{3}\vec{M}_{S}\cdot\vec{M}_{I}\delta(\vec{r})\end{align}\]</span></p><p>此处</p><p><span class="math display">\[\begin{align}\vec{M}_{L}&amp;=-\frac{\mu_{B}}{\hbar}g_{L}\vec{L}\\\vec{M}_{S}&amp;=-\frac{\mu_{B}}{\hbar}g_{S}\vec{S}\\\vec{M}_{I}&amp;=-\frac{\mu_{B}}{\hbar}g_{I}\vec{I}\end{align}\]</span></p><p>分别为电子轨道磁矩、电子自旋磁矩、核自旋磁矩，其Lande因子的典型值为<spanclass="math inline">\(g_{L}=1,\,g_{S}=2,\,g_{I}=-0.001(^{87}\mathrm{Rb})\)</span>。</p><p>此外，一般还需要计入电四极相互作用的影响，此处略去，读者可以自行查阅原子物理学相关教材。</p><h4 id="数量级估计">数量级估计</h4><p>根据半经典的Bohr模型，能够估计<spanclass="math inline">\(H_{0}\)</span>特征能量与特征长度，注意到第<spanclass="math inline">\(n\)</span>能级的轨道参数为</p><p><span class="math display">\[\begin{align}r_{n}&amp;=n^{2}a_{0}\\v_{n}&amp;=\frac{v_{0}}{n}\\E_{n}&amp;=-\frac{E_{0}}{n^{2}}\end{align}\]</span></p><p>此处 <span class="math display">\[\begin{align}a_{0}&amp;=\frac{\lambda}{\alpha}=\frac{\hbar}{\alphamc}\approx0.53\,\mathrm{\AA}\\v_{0}&amp;=\alpha c\approx2.2\times10^{3}\,\text{km/s}\\E_{0}&amp;=\alpha^{2}\frac{1}{2}mc^{2}\approx13.6\,\text{eV}\end{align}\]</span></p><p>从而可以与精细结构或超精细结构的数量级进行比较：</p><p><span class="math display">\[\begin{align}\frac{\langle W_{F}\rangle}{\langleH_{0}\rangle}&amp;\approx\frac{1}{E_{0}}\frac{(mv_{0})^{4}}{8m^{3}c^{2}}=\frac{\alpha^{2}}{4}\approx\frac{1}{4}(\frac{1}{137})^{2}\\\frac{\langle W_{HF}\rangle}{\langleW_{F}\rangle}&amp;\approx\frac{m_{e}}{m_{p}}\approx\frac{1}{1836}\end{align}\]</span></p><p>之所以角动量的耦合分为两步，正是因为此处所示微扰项的量级不同；从实验测量的角度，随着测量精度的提高，观测到谱线的“分裂”，对应原子能级的精细结构或超精细结构。</p><h4 id="外电磁场中的原子">外电磁场中的原子</h4><p>在均匀外磁场<spanclass="math inline">\(\vec{B}=B\vec{e}_{z}\)</span>中，有微扰项</p><p><span class="math display">\[\begin{align}W_{z}&amp;=-\vec{B}\cdot(\vec{M}_{L}+\vec{M}_{S}+\vec{M}_{I})\\&amp;=\frac{\mu_{B}B}{\hbar}(L_{z}+2S_{z}+g_{I}I_{z})\end{align}\]</span></p><p>倘若<span class="math inline">\(\omega_{0}=\mu_{B}B/\hbar\llW_{HF}\)</span>，近似认为<spanclass="math inline">\(F\)</span>是一个好量子数，从而<spanclass="math inline">\(W_{z}=\omega_{0}F_{z}\)</span>；反之，倘若<spanclass="math inline">\(W_{HF}\ll\omega_{0}\llW_{F}\)</span>，近似认为<spanclass="math inline">\(J_{z}\)</span>和<spanclass="math inline">\(I_{z}\)</span>是好量子数。这种处理方法类似多电子原子的LS耦合制式与JJ耦合制式的区分。</p><h3 id="激光冷却原子">激光冷却原子</h3><aside id="footnotes" class="footnotes footnotes-end-of-document"role="doc-endnotes"><hr /><ol><li id="fn1"><p>关于Darwin项的介绍，可以参考高守恩《<ahref="https://kns.cnki.net/kcms2/article/abstract?v=S5uBaE2M3OftH4BUxS5wK6aL72j4ma0L80nsoKKXi5eoroxlhc6F1JeGTkmAuy7SHKGJR4m1-3hW5pWp9_h_t4U7CumkuIa5d8dPubbP860hUPWcOhlACPACL-nOMchb5T9yqQhW_kU">关于Dirac相对论量子力学中Zitterbewegung和Darwin项一些问题</a>》或曾谨言《量子力学(卷II)》第10.4节相关内容。<ahref="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li><liid="fn2"><p>此处参考刘玉鑫《原子物理学讲义》稍作补充，具体推导建议参考其他教材。<ahref="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li></ol></aside>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;strong&gt;向量场的交换&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;设&lt;span
-class=&quot;math inline&quot;&gt;&#92;(&#92;boldsymbol{u},&#92;,&#92;boldsymbol{v}&#92;)&lt;/span&gt;为向量场，则有
-&lt;span class=&quot;math display&quot;</summary>
+    <summary type="html">&lt;h3 id=&quot;单原子的量子描述&quot;&gt;单原子的量子描述&lt;/h3&gt;
+&lt;p&gt;原子由原子核与核外电子组成，其基本参数包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原子序数&lt;span
+class=&quot;math inline&quot;&gt;&#92;(Z&#92;)&lt;/span&gt;：等于质子数，或核外电子数&lt;/li&gt;
+&lt;li</summary>
       
     
     
@@ -43,9 +45,72 @@ class=&quot;math inline&quot;&gt;&#92;(&#92;boldsymbol{u},&#92;,&#92;boldsymbol{
     
     <category term="实验技术" scheme="http://polarismegrez.github.io/tags/%E5%AE%9E%E9%AA%8C%E6%8A%80%E6%9C%AF/"/>
     
+    <category term="激光冷却" scheme="http://polarismegrez.github.io/tags/%E6%BF%80%E5%85%89%E5%86%B7%E5%8D%B4/"/>
+    
+    <category term="原子物理学" scheme="http://polarismegrez.github.io/tags/%E5%8E%9F%E5%AD%90%E7%89%A9%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Math] 李群与李代数(1) 不变积分</title>
+    <link href="http://polarismegrez.github.io/2024/[Math]%20Lie%20Group%20and%20Lie%20Algebra%20(1)/"/>
+    <id>http://polarismegrez.github.io/2024/[Math]%20Lie%20Group%20and%20Lie%20Algebra%20(1)/</id>
+    <published>2024-02-28T05:30:00.000Z</published>
+    <updated>2024-03-06T09:44:03.962Z</updated>
+    
+    <content type="html"><![CDATA[<p>设<span class="math inline">\(G\)</span>是一个非空集合，称<spanclass="math inline">\(G\)</span>是一个<strong>李群</strong>(LieGroup)，倘若其满足性质： - <spanclass="math inline">\(G\)</span>是一个群； - <spanclass="math inline">\(G\)</span>是一个微分流形； - 群乘法是可微的</p><p>群上积分： - <span class="math inline">\(\forall g\in G,I(f(x))=I(\Phi_{g}f(x))=I(f(g(x)))\)</span> - <spanclass="math inline">\(I(\alpha f+\beta g)=\alpha I(f)+\betaI(g)\)</span> - <span class="math inline">\(f\ge0\quad\Rightarrow\quadI(f)\ge0; f\ge0, f\not\equiv0\quad\Rightarrow\quad I(f)\ge0\)</span> -<span class="math inline">\(f=c\quad\Rightarrow\quad I(f)=C\)</span></p><p>对于紧致李群，群上积分存在且唯一。</p><p>李群的局部结构：</p><ul><li><span class="math inline">\(T_{e}\)</span>与<spanclass="math inline">\(\mathscr{G}\)</span>同构，此处<spanclass="math inline">\(\mathscr{G}\)</span>是左不变向量场空间：<spanclass="math inline">\(\forall g\in G, X(g)=L_{g}\ast X\)</span>（<spanclass="math inline">\(L_{g}\)</span>是左平移变换）<spanclass="math inline">\(\forall X\in T_{e}\)</span></li><li><span class="math inline">\(\forall X,\,Y\in\mathscr{G},[X,\,Y]\in\mathscr{G}\)</span></li><li>设<span class="math inline">\(\{\hat{e}_{i}\}\)</span>是<spanclass="math inline">\(T_{e}\)</span>一组基，<spanclass="math inline">\(\{e_{i}\}\)</span>是相应左平移向量场，</li></ul><p>(2)证明：</p><p><span class="math inline">\(L_{g}\ast X=X,\,L_{g}\astY=Y\quad\Rightarrow\)</span> <span class="math display">\[\begin{align}L_{g}[X,\,Y](f)&amp;=[X,\,Y]L_{g}(f)=X(Y(L_{g}f))-Y(X(L_{g}f))\\&amp;=X(L_{g}\ast Y(f))-Y(L_{g}\ast X(f))\\&amp;=X(Y(f))-Y(X(f))=[X,\,Y](f)\end{align}\]</span></p><p>从而两个左平移不变向量场之对易仍然是一个左平移不变向量场。</p><p>(3)证明：</p><p><span class="math display">\[\begin{align}L_{g}\ast[e_{i},\,e_{j}]&amp;=[e_{i},\,e_{j}]\\&amp;=\end{align}\]</span></p><p><span class="math display">\[\begin{equation}\forall\,g,\,[u_{e},\,v_{e}]_{e}=[L_{g}\ast u_{e},\,L_{g}\astv_{e}]\big|_{e}\end{equation}\]</span></p><p>从而<spanclass="math inline">\((V_{e},\,[\cdot]_{e})\cong\mathscr{G}\)</span></p><p>矩阵的李代数：<span class="math inline">\([A,\,B]=AB-BA\)</span></p><blockquote><p><strong>例：<span class="math inline">\(SO(3)\)</span>群</strong><span class="math display">\[\begin{align}X_{ij}(\lambda)&amp;=\frac{\mathrm{d}X_{ij}}{\mathrm{d}\lambda}\\&amp;=\frac{\mathrm{d}S}{\mathrm{d}\lambda}\cdot R_{z}\cdotS^{-1}+S\cdot\frac{\mathrm{d}R_{z}}{\mathrm{d}\lambda}\cdotS^{-1}+S\cdotR_{z}\cdot\frac{\mathrm{d}S^{-1}}{\mathrm{d}\lambda}\big|_{\lambda=(\theta,\,\varphi,\,\omega)=0}\\&amp;=\frac{\mathrm{d}S}{\mathrm{d}\lambda}\cdotS^{-1}+S\cdot\frac{\mathrm{d}R_{z}}{\mathrm{d}\lambda}\cdotS^{-1}+S\cdot\frac{\mathrm{d}S^{-1}}{\mathrm{d}\lambda}\big|_{\lambda=(\theta,\,\varphi,\,\omega)=0}\\&amp;=S\cdot\frac{\mathrm{d}R_{z}}{\mathrm{d}\lambda}\big|_{\omega=0}\cdotS^{-1}\\\end{align}\]</span></p></blockquote><p><span class="math display">\[\begin{align}v(f)|_{g}&amp;=(L_{g}\ast v_{e})(f)|_{g}\\&amp;=v_{e}(L_{g}f)|_{e}\\&amp;=v_{e}(f(g\cdot x))\end{align}\]</span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;设&lt;span class=&quot;math inline&quot;&gt;&#92;(G&#92;)&lt;/span&gt;是一个非空集合，称&lt;span
+class=&quot;math inline&quot;&gt;&#92;(G&#92;)&lt;/span&gt;是一个&lt;strong&gt;李群&lt;/strong&gt;(Lie
+Group)，倘若其满足性质： - &lt;spa</summary>
+      
+    
+    
+    
+    <category term="数学" scheme="http://polarismegrez.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="课程笔记" scheme="http://polarismegrez.github.io/categories/%E6%95%B0%E5%AD%A6/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    
     <category term="基础内容" scheme="http://polarismegrez.github.io/tags/%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9/"/>
     
-    <category term="激光冷却" scheme="http://polarismegrez.github.io/tags/%E6%BF%80%E5%85%89%E5%86%B7%E5%8D%B4/"/>
+    <category term="微分几何" scheme="http://polarismegrez.github.io/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/"/>
+    
+    <category term="李群与李代数" scheme="http://polarismegrez.github.io/tags/%E6%9D%8E%E7%BE%A4%E4%B8%8E%E6%9D%8E%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Phys] 量子光学(1) 电磁场的量子化</title>
+    <link href="http://polarismegrez.github.io/2024/[Phys]%20Quantum%20Optics%20(1)/"/>
+    <id>http://polarismegrez.github.io/2024/[Phys]%20Quantum%20Optics%20(1)/</id>
+    <published>2024-02-27T07:30:00.000Z</published>
+    <updated>2024-03-06T09:34:14.561Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="经典电磁波的模式展开">经典电磁波的模式展开</h3><p>对于真空中的电磁场，其经典描述以Maxwell方程组为基础：</p><p><span class="math display">\[\begin{align}\nabla\cdot\bm{D}&amp;=0\\\nabla\times\bm{E}&amp;=-\frac{\partial\bm{B}}{\partial t}\\\nabla\cdot\bm{B}&amp;=0\\\nabla\times\bm{H}&amp;=\frac{\partial\bm{D}}{\partial t}\\\end{align}\]</span></p><p>结合描述电磁介质（此处为真空）的<strong>本构关系</strong>(constitutiverelations)</p><p><span class="math display">\[\begin{align}\bm{D}&amp;=\varepsilon_{0}\bm{E}\\\bm{B}&amp;=\mu_{0}\bm{H}\\\end{align}\]</span></p><p>结合(2)(4)式，可以得到波动方程</p><p><span class="math display">\[\begin{align}\nabla^{2}\bm{E}-\frac{1}{c^{2}}\frac{\partial^{2}\bm{E}}{\partialt^{2}}=0\end{align}\]</span></p><p>不失一般性，我们以长度为<spanclass="math inline">\(L\)</span>的一维谐振腔（沿<spanclass="math inline">\(x\)</span>轴方向）为例，考虑沿<spanclass="math inline">\(z\)</span>轴偏振分量</p><h3 id="单模电磁场的量子化">单模电磁场的量子化</h3><h3 id="单模场的量子涨落">单模场的量子涨落</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;经典电磁波的模式展开&quot;&gt;经典电磁波的模式展开&lt;/h3&gt;
+&lt;p&gt;对于真空中的电磁场，其经典描述以Maxwell方程组为基础：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;&#92;[&#92;begin{align}
+&#92;nabla&#92;cdot&#92;bm{D}</summary>
+      
+    
+    
+    
+    <category term="物理" scheme="http://polarismegrez.github.io/categories/%E7%89%A9%E7%90%86/"/>
+    
+    <category term="课程笔记" scheme="http://polarismegrez.github.io/categories/%E7%89%A9%E7%90%86/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="基础内容" scheme="http://polarismegrez.github.io/tags/%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9/"/>
+    
+    <category term="量子光学" scheme="http://polarismegrez.github.io/tags/%E9%87%8F%E5%AD%90%E5%85%89%E5%AD%A6/"/>
     
   </entry>
   
@@ -151,6 +216,85 @@ class=&quot;math inline&quot;&gt;&#92;(&#92;boldsymbol{j}(&#92;vec{r</summary>
   </entry>
   
   <entry>
+    <title>[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场</title>
+    <link href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/"/>
+    <id>http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(2)/</id>
+    <published>2023-10-20T05:30:00.000Z</published>
+    <updated>2023-12-06T11:56:31.831Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p></blockquote><h3 id="klein-gordon方程">Klein-Gordon方程</h3><p><span class="math display">\[\begin{equation}\mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})\end{equation}\]</span></p><p>正则动量： <span class="math display">\[\begin{equation}\pi(x)=\frac{\partial\mathcal{L}}{\partial\dot{\phi}}=\dot{\phi}(x)\end{equation}\]</span></p><p><span class="math display">\[\begin{equation}\mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)\end{equation}\]</span></p><p>平面波解： <span class="math display">\[\begin{equation}\phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>此处<spanclass="math inline">\(\bar{N}_{p}\)</span>为归一化常数，<spanclass="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>。</p><p>计算可得 <span class="math display">\[\begin{equation}\pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{align}\omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\\omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\end{align}\]</span></p><p>作Fourier逆变换得到 <span class="math display">\[\begin{align}(2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>从而有 <span class="math display">\[\begin{align}a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>此处<spanclass="math inline">\(\bar{A}_{p}\)</span>为归一化常数，满足关系 <spanclass="math display">\[\begin{equation}\bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}\end{equation}\]</span></p><p>注意到正则对易关系 <span class="math display">\[\begin{equation}[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)\end{equation}\]</span></p><p>此处 <span class="math display">\[\begin{equation}\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}\end{equation}\]</span></p><p>解得产生、湮灭算符的对易关系 <spanclass="math display">\[\begin{align}[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)\end{align}\]</span></p><p>注意到，倘若我们选取归一化常数 <spanclass="math display">\[\begin{equation}\bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{equation}\left.\begin{array}{r}\displaystylea_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\\displaystylea_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)\end{equation}\]</span></p><p>事实上，同样可以选取其他归一化方法，使得<spanclass="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p><h3 id="协变对易关系">协变对易关系</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;klein-gordon方程&quot;&gt;Klein-Gordon方程&lt;/h3&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="物理 笔记" scheme="http://polarismegrez.github.io/tags/%E7%89%A9%E7%90%86-%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场</title>
+    <link href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(3).sync-conflict-20240229-223500-OI2KD5W/"/>
+    <id>http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(3).sync-conflict-20240229-223500-OI2KD5W/</id>
+    <published>2023-10-20T05:30:00.000Z</published>
+    <updated>2023-11-07T14:58:55.421Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p></blockquote><h3 id="klein-gordon方程">Klein-Gordon方程</h3><h3 id="实标量场">实标量场</h3><p><span class="math display">\[\begin{equation}\mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})\end{equation}\]</span></p><p>正则动量： <span class="math display">\[\begin{equation}\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)\end{equation}\]</span></p><p><span class="math display">\[\begin{equation}\mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)\end{equation}\]</span></p><p>平面波解： <span class="math display">\[\begin{equation}\phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>此处 <span class="math inline">\(\bar{N}_{p}\)</span>为归一化常数，<spanclass="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>。</p><p>计算可得 <span class="math display">\[\begin{equation}\pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{align}\omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\\omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\end{align}\]</span></p><p>作Fourier逆变换得到 <span class="math display">\[\begin{align}(2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>从而有 <span class="math display">\[\begin{align}a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>此处 <span class="math inline">\(\bar{A}_{p}\)</span>为归一化常数，满足关系 <span class="math display">\[\begin{equation}\bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}\end{equation}\]</span></p><p>注意到正则对易关系 <span class="math display">\[\begin{equation}[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)\end{equation}\]</span></p><p>此处 <span class="math display">\[\begin{equation}\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}\end{equation}\]</span></p><p>解得产生、湮灭算符的对易关系 <spanclass="math display">\[\begin{align}[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)\end{align}\]</span></p><p>注意到，倘若我们选取归一化常数 <spanclass="math display">\[\begin{equation}\bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{equation}\left.\begin{array}{r}\displaystylea_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\\displaystylea_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)\end{equation}\]</span></p><p>事实上，同样可以选取其他归一化方法，使得<spanclass="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p><h3 id="协变对易关系">协变对易关系</h3><h3 id="复标量场">复标量场</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;klein-gordon方程&quot;&gt;Klein-Gordon方程&lt;/h3&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="物理 笔记" scheme="http://polarismegrez.github.io/tags/%E7%89%A9%E7%90%86-%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Phys] 量子场论笔记(3) 克莱茵-戈登(Klein-Gorden)场</title>
+    <link href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(4).sync-conflict-20240229-223500-OI2KD5W/"/>
+    <id>http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(4).sync-conflict-20240229-223500-OI2KD5W/</id>
+    <published>2023-10-20T05:30:00.000Z</published>
+    <updated>2023-11-07T14:58:55.421Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p></blockquote><h3 id="dirac方程">Dirac方程</h3><h3 id="实标量场">实标量场</h3><p><span class="math display">\[\begin{align}&amp;\bar{u}_{r}(\vec{p})(\gamma^{\mu}\vec{p}_{\mu}-m)=0\\\Rightarrow\&amp;\bar{u}_{r}(\vec{p})\gamma^{\mu}\vec{p}_{\mu}=m\bar{u}_{r}(\vec{p})\end{align}\]</span></p><h3 id="传播子">传播子</h3><p><span class="math display">\[\begin{equation}\mathrm{i}\partial\Psi(\alpha)=0\end{equation}\]</span></p><p><span class="math display">\[\begin{equation}P_{L}\mathrm{i}\partial\Psi=0\quad\Rightarrow\quad\mathrm{i}\partial\!\!\!/\Psi_{L}=0\end{equation}\]</span></p><p><span class="math display">\[\begin{align}\mathrm{i}\partial\!\!\!/\Psi_{L}=\mathrm{i}\gamma^{\mu}\partial_{\mu}\Psi_{L}=\mathrm{i}\left\lgroup\begin{array}{cc}c\end{array}\right\rgroup\end{align}\]</span></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;dirac方程&quot;&gt;Dirac方程&lt;/h3&gt;
+&lt;h3 id=&quot;实标量场</summary>
+      
+    
+    
+    
+    
+    <category term="物理 笔记" scheme="http://polarismegrez.github.io/tags/%E7%89%A9%E7%90%86-%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>[Phys] 量子场论笔记-绪论</title>
     <link href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/"/>
     <id>http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1)/</id>
@@ -181,6 +325,61 @@ class=&quot;math inline&quot;&gt;&#92;(&#92;boldsymbol{j}(&#92;vec{r</summary>
     <category term="基础内容" scheme="http://polarismegrez.github.io/tags/%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9/"/>
     
     <category term="量子场论" scheme="http://polarismegrez.github.io/tags/%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Phys] 量子场论笔记-绪论</title>
+    <link href="http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1).sync-conflict-20240229-223500-OI2KD5W/"/>
+    <id>http://polarismegrez.github.io/2023/LecNote-Quantum%20Field%20Theory%20(1).sync-conflict-20240229-223500-OI2KD5W/</id>
+    <published>2023-10-09T05:30:00.000Z</published>
+    <updated>2023-11-07T14:58:55.420Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.</p></blockquote><p><strong>基本假设</strong></p><ul><li><p>幺正性</p></li><li><p>Lorentz协变性</p></li></ul><h3 id="符号约定">符号约定</h3><p>Lorentz时空的时空坐标四矢量<spanclass="math inline">\(x^{\mu}=(x^{0},\,x^{1},\,x^{2},\,x^{3})=(t,\,\vec{x})\)</span>，一般以希腊字母表示四矢量，以拉丁字母表示三矢量。上指标矢量称为逆变矢量(contravariantvector)，下指标矢量称为协变矢量(covariant vector)，例如<spanclass="math inline">\(x_{\mu}=\{x_{0},\,x_{1},\,x_{2},\,x_{3}\}=(t,\,-\vec{x})\)</span></p><h3 id="klein-gordon方程">Klein-Gordon方程</h3><p><span class="math display">\[\begin{equation}\mathcal{L}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi-m^{2}\phi^{2})\end{equation}\]</span></p><p>正则动量： <span class="math display">\[\begin{equation}\pi(x)=\frac{\partial\mathcal{L}}{\partial\phi}=\dot{\phi}(x)\end{equation}\]</span></p><p><span class="math display">\[\begin{equation}\mathcal{H}(\phi)=\frac{1}{2}(\partial_{\mu}\phi\partial^{\mu}\phi+m^{2}\phi)\end{equation}\]</span></p><p>平面波解： <span class="math display">\[\begin{equation}\phi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>此处<spanclass="math inline">\(\bar{N}_{p}\)</span>为归一化常数，<spanclass="math inline">\(\omega_{p}=\sqrt{\vec{p}^{2}+m^{2}}\)</span>。</p><p>计算可得 <span class="math display">\[\begin{equation}\pi(t,\,\vec{x})=\int{\mathrm{d}^{3}p\,\bar{N}_{p}(-\mathrm{i}\omega_{p}a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}+\mathrm{i}\omega_{p}a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)})}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{align}\omega_{p}\phi+\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}e^{+\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\\\omega_{p}\phi-\mathrm{i}\pi=\int{\mathrm{d}^{3}p\,(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{-\mathrm{i}(\vec{p}\cdot\vec{x}-\omega_{p}t)}}\end{align}\]</span></p><p>作Fourier逆变换得到 <span class="math display">\[\begin{align}(2\bar{N}_{p}\omega_{p})a_{p}e^{-\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi+\mathrm{i}\pi)}\\(2\bar{N}_{p}\omega_{p})a_{p}^{\dagger}e^{+\mathrm{i}\omega_{p}t}=\frac{\bar{N}_{p}}{2\omega_{}(2\pi)^{3}}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}\vec{p}\cdot\vec{x}}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>从而有 <span class="math display">\[\begin{align}a_{p}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\a_{p}^{\dagger}=\bar{A}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{align}\]</span></p><p>此处<spanclass="math inline">\(\bar{A}_{p}\)</span>为归一化常数，满足关系 <spanclass="math display">\[\begin{equation}\bar{A}_{p}\bar{N}_{p}=\frac{1}{2\omega_{p}(2\pi)^{3}}\end{equation}\]</span></p><p>注意到正则对易关系 <span class="math display">\[\begin{equation}[\phi(t,\,\vec{x}),\,\pi(t,\,\vec{x}&#39;)]=\mathrm{i}\delta^{3}(\vec{x}-\vec{x}&#39;)\end{equation}\]</span></p><p>此处 <span class="math display">\[\begin{equation}\delta(\vec{x}-\vec{x}&#39;)=\frac{1}{(2\pi)^{3}}\int{\mathrm{d}^{3}p\,e^{\pm\mathrm{i}\vec{p}\cdot\vec{x}}}\end{equation}\]</span></p><p>解得产生、湮灭算符的对易关系 <spanclass="math display">\[\begin{align}[a_{p},\,a_{p&#39;}^{\dagger}]&amp;=\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\omega_{p}\phi+\mathrm{i}\pi,\,\omega_{p&#39;}\phi-\mathrm{i}\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\int{\mathrm{d}^{3}x\,\mathrm{d}^{3}x&#39;\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}[\phi,\,\pi]e^{-\mathrm{i}(\omega_{p&#39;}t-\vec{p&#39;}\cdot\vec{x&#39;})}}\\&amp;=(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}e^{+\mathrm{i}(\omega_{p}-\omega_{p&#39;})t}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\vec{p}-\vec{p}&#39;)\cdot\vec{x}}}\\&amp;=(2\pi)^{3}(\omega_{p&#39;}+\omega_{p})\bar{A}_{p}\bar{A}_{p&#39;}\delta^{3}(\vec{p}-\vec{p}&#39;)\end{align}\]</span></p><p>注意到，倘若我们选取归一化常数 <spanclass="math display">\[\begin{equation}\bar{N}_{p}=\bar{A}_{p}=\frac{1}{\sqrt{2\omega_{p}(2\pi)^{3}}}\end{equation}\]</span></p><p>则有 <span class="math display">\[\begin{equation}\left.\begin{array}{r}\displaystylea_{p}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{+\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi+\mathrm{i}\pi)}\\\displaystylea_{p}^{\dagger}=\bar{N}_{p}\int{\mathrm{d}^{3}x\,e^{-\mathrm{i}(\omega_{p}t-\vec{p}\cdot\vec{x})}(\omega_{p}\phi-\mathrm{i}\pi)}\end{array}\right\}\quad\Rightarrow\quad[a_{p},\,a_{p&#39;}^{\dagger}]=\delta^{3}(\vec{p}-\vec{p}&#39;)\end{equation}\]</span></p><p>事实上，同样可以选取其他归一化方法，使得<spanclass="math inline">\(\bar{N}_{p}\)</span>的取值更加适合场量平均值的计算，我们之后一律采取(19)式所示的归一化方法。</p><h3 id="协变对易关系">协变对易关系</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;不确定性关系要求我们使用高能物理作为物理学深入微观世界的精确探针.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;基本假设&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;</summary>
+      
+    
+    
+    
+    
+    <category term="物理 笔记" scheme="http://polarismegrez.github.io/tags/%E7%89%A9%E7%90%86-%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[Quant] 证券投资学笔记</title>
+    <link href="http://polarismegrez.github.io/2023/LecNote-Python%20for%20Sci.%20Comp.%20(1)/"/>
+    <id>http://polarismegrez.github.io/2023/LecNote-Python%20for%20Sci.%20Comp.%20(1)/</id>
+    <published>2023-02-22T02:10:00.000Z</published>
+    <updated>2023-11-07T14:58:55.420Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>除了风险，金融市场没有什么是确定的。</p></blockquote><p><strong>投资学关注的问题</strong></p><p>“定价问题”——对给定的风险资产进行定价；</p><p>“投资问题”——在投资的风险和收益之间进行权衡对风险资产进行合理的配置；</p><p>“消费和投资问题”——对人生不同阶段的消费与投资进行合理规划；</p><p>“资产负债管理问题”——具有负债约束下的资产配置与投资问题。</p><span id="more"></span><h3 id="实物资产与金融资产">1.1 实物资产与金融资产</h3><p>一个社会的物质财富最终取决于社会经济的<strong>生产能力</strong>，这种生产能力是经济体中<strong>实物资产</strong>的函数——金融资产归根结底是底层的实物资产支撑的。</p><p>实物资产为经济创造净利润，而金融资产确定收益或财富在投资者之间的分配，代表持有者对实物资产所产生收入的索取权。</p><blockquote><p>投资者购买企业发行的证券，企业就可以用筹集到的资金购买实物资产，如厂房、设备、技术和原料，而投资者虽然没有自己的汽车厂，仍然可以通过购买福特汽车的股份来分享汽车生产所产生的收入。</p></blockquote><blockquote><p><strong>投资者投资证券（金融资产）的收益最终来源于企业通过发行证券所筹集的资金购买实物资产所产生的利润。</strong></p></blockquote><h3 id="金融资产">1.2 金融资产</h3><p>金融资产通常可以分为三类：固定收益型金融资产、权益性金融资产、衍生金融资产。</p><p><strong>固定收益型金融资产/债务型金融资产</strong>：承诺支付一系列固定的现金流。</p><blockquote><p>公司债券向证券持有者承诺每年固定的利息收入，除非债券发行方违约，否则债券持有者将获得固定收益——固定收益型金融资产的收益受发行方财务状况的影响最小。</p></blockquote><p><strong>普通股/权益型金融资产</strong>：代表证券持有者对公司的所有权。</p><blockquote><p>权益型证券持有者未被承诺任何的特定收益，但是可以获得公司<strong>分配</strong>的股利，并按相应的比例拥有对公司实物资产的所有权——权益投资绩效与公司运营成败密切相关。</p></blockquote><p><strong>衍生证券（期权/期货合约/etc.）</strong>：收益取决于标的资产的价格变化。</p><blockquote><p>衍生证券最主要的用途之一就是规避风险，即通过衍生品的投资可以将风险从一方转移给其他方，被普遍看作和用作对冲风险的管理工具。</p></blockquote><h3 id="金融市场和经济">1.3 金融市场和经济</h3><h4 id="金融市场的信息作用">金融市场的信息作用</h4><p>在市场经济中，证券价格通常在资本配置中发挥着重要的作用，引领着资本流向最具有增长潜力的行业和企业。</p><blockquote><p>股价是投资者对公司当前业绩和未来前景的综合评价。但是市场不总是理性的，从而通过股票市场来配置资本的过程有时是有效的、有时是无效的。没有理由认为市场百分百是正确的。</p></blockquote><h4 id="消费时机">消费时机</h4><h4 id="风险分配">风险分配</h4><p>金融市场和在金融市场上交易的各种金融工具可以使偏好风险的投资者承担风险，是厌恶风险的投资者规避风险。</p><blockquote><p>针对不同风险偏好的投资者进行筹资的方式提高了市场发挥其配置资本功能的效率。类似于在日常生活中常见到的把整件货品依其品质分割成不同的商品卖给顾客能卖得更快更好一样。</p></blockquote><h4 id="所有权与经营权的分离">所有权与经营权的分离</h4><blockquote class="blockquote-center"><p>金融市场种种丑态与争议的万恶之源。</p></blockquote><blockquote><p>2012年通用电气公司的房地产、厂房、设备等资产的总价值为700亿美元，资产总额约为6850亿美元，公司拥有50多万个股东，如此众多的股东们显然不可能每一个人都参与到公司的日常管理中。</p></blockquote><blockquote><p>实际做法是共同挑选一个董事会，由董事会负责聘请并监督公司的管理层。意味着公司的所有者与管理者由不同的人构成，即所有层与管理层分离。</p></blockquote><p><strong>代理问题</strong></p><h2 id="附录">附录</h2><h3 id="缩写速查表">缩写速查表</h3><p>IPO：首次公开发行</p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote class=&quot;blockquote-center&quot;&gt;
+&lt;p&gt;除了风险，金融市场没有什么是确定的。&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;投资学关注的问题&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;“定价问题”——对给定的风险资产进行定价；&lt;/p&gt;
+&lt;p&gt;“投资问题”——在投资的风险和收益之间进行权衡对风险资产进行合理的配置；&lt;/p&gt;
+&lt;p&gt;“消费和投资问题”——对人生不同阶段的消费与投资进行合理规划；&lt;/p&gt;
+&lt;p&gt;“资产负债管理问题”——具有负债约束下的资产配置与投资问题。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="量化交易 证券投资学" scheme="http://polarismegrez.github.io/tags/%E9%87%8F%E5%8C%96%E4%BA%A4%E6%98%93-%E8%AF%81%E5%88%B8%E6%8A%95%E8%B5%84%E5%AD%A6/"/>
     
   </entry>
   
