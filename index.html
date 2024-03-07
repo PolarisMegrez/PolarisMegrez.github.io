@@ -211,7 +211,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-03-06 21:40:28" itemprop="dateModified" datetime="2024-03-06T21:40:28+08:00">2024-03-06</time>
+      <time title="修改时间：2024-03-07 21:35:20" itemprop="dateModified" datetime="2024-03-07T21:35:20+08:00">2024-03-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -237,7 +237,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h3 id="单原子的量子描述">单原子的量子描述</h3>
+          <h1 id="单原子的量子描述">单原子的量子描述</h1>
 <p>原子由原子核与核外电子组成，其基本参数包括：</p>
 <ul>
 <li>原子序数<span
@@ -257,116 +257,14 @@ class="math inline">\(\vec{I}\)</span>构成，其耦合分为两步：</p>
 \vec{F}=\vec{J}+\vec{I}
 \end{align}\]</span></p>
 <p>其中(1)式考虑电子自旋与轨道角动量耦合得到的原子能级结构称为<strong>精细能级结构</strong>，(2)式进一步考虑核自旋与电子角动量耦合得到的原子能级结构称为<strong>超精细能级结构</strong>。</p>
-<div class="note info"><p>目前对多种原子气体实现了玻色-爱因斯坦凝聚，其中最典型的是碱金属原子，此种情形下BO近似应该视为二体等效方法，仅需对原子基本参数稍作修正（忽略高阶激发态）。</p>
-</div>
-<h4 id="类氢原子的hamiltonian">（类）氢原子的Hamiltonian</h4>
-<p>我们以氢原子为例，考虑精细结构与超精细结构的Hamiltonian为：</p>
-<p><span class="math display">\[\begin{equation}
-H=H_{0}+W_{F}+W_{HF}
-\end{equation}\]</span></p>
-<p>其中</p>
-<p><span class="math display">\[\begin{align}
-H_{0}&amp;=\frac{p^{2}}{2m}+V(r)\\
-V(r)&amp;=-\frac{e^{2}}{4\pi\varepsilon_{0}}\frac{1}{r}
-\end{align}\]</span></p>
-<p>精细结构项为<a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></p>
-<p><span class="math display">\[\begin{align}
-W_{F}&amp;=W_{mv}+W_{SO}+W_{D}
-\end{align}\]</span></p>
-<p>其中，相对论动能修正项为</p>
-<p><span class="math display">\[\begin{align}
-W_{mv}&amp;=-\frac{p^{4}}{8m^{3}c^{2}}
-\end{align}\]</span></p>
-<p>对于<span
-class="math inline">\(l\ne0\)</span>的情形，电子自旋-轨道角动量耦合项为</p>
-<p><span class="math display">\[\begin{align}
-W_{SO}&amp;=\frac{1}{2m^{2}c^{2}}\frac{1}{r}\frac{\mathrm{d}V(r)}{\mathrm{d}r}\vec{L}\cdot\vec{S}
-\end{align}\]</span></p>
-<p>对于<span class="math inline">\(l=0\)</span>的情形，Darwin项为</p>
-<p><span class="math display">\[\begin{align}
-W_{D}&amp;=\frac{\hbar^{2}}{8m^{2}c^{2}}\Delta V(r)
-\end{align}\]</span></p>
-<p>超精细结构项为<a href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></p>
-<p><span class="math display">\[\begin{align}
-W_{HF}&amp;=W_{LI}+W_{SID}+W_{SIF}
-\end{align}\]</span></p>
-<p>对于<span
-class="math inline">\(l\ne0\)</span>的情形，电子轨道角动量的磁偶极相互作用为</p>
-<p><span class="math display">\[\begin{align}
-W_{LI}&amp;=-\frac{\mu_{0}}{4\pi}\frac{1}{r^{3}}\vec{M}_{L}\cdot\vec{M}_{I}
-\end{align}\]</span></p>
-<p>电子自旋角动量的磁偶极相互作用为</p>
-<p><span class="math display">\[\begin{align}
-W_{SID}&amp;=-\frac{\mu_{0}}{4\pi}\frac{1}{r^{3}}[3(\vec{M}_{S}\cdot\vec{n})(\vec{M}_{I}\cdot\vec{n})-\vec{M}_{S}\cdot\vec{M}_{I}]
-\end{align}\]</span></p>
-<p>对于<span
-class="math inline">\(l=0\)</span>的情形，电子角动量的磁偶极相互作用为</p>
-<p><span class="math display">\[\begin{align}
-W_{SIF}&amp;=-\frac{\mu_{0}}{4\pi}\frac{8\pi}{3}\vec{M}_{S}\cdot\vec{M}_{I}\delta(\vec{r})
-\end{align}\]</span></p>
-<p>此处</p>
-<p><span class="math display">\[\begin{align}
-\vec{M}_{L}&amp;=-\frac{\mu_{B}}{\hbar}g_{L}\vec{L}\\
-\vec{M}_{S}&amp;=-\frac{\mu_{B}}{\hbar}g_{S}\vec{S}\\
-\vec{M}_{I}&amp;=-\frac{\mu_{B}}{\hbar}g_{I}\vec{I}
-\end{align}\]</span></p>
-<p>分别为电子轨道磁矩、电子自旋磁矩、核自旋磁矩，其Lande因子的典型值为<span
-class="math inline">\(g_{L}=1,\,g_{S}=2,\,g_{I}=-0.001(^{87}\mathrm{Rb})\)</span>。</p>
-<p>此外，一般还需要计入电四极相互作用的影响，此处略去，读者可以自行查阅原子物理学相关教材。</p>
-<h4 id="数量级估计">数量级估计</h4>
-<p>根据半经典的Bohr模型，能够估计<span
-class="math inline">\(H_{0}\)</span>特征能量与特征长度，注意到第<span
-class="math inline">\(n\)</span>能级的轨道参数为</p>
-<p><span class="math display">\[\begin{align}
-r_{n}&amp;=n^{2}a_{0}\\
-v_{n}&amp;=\frac{v_{0}}{n}\\
-E_{n}&amp;=-\frac{E_{0}}{n^{2}}
-\end{align}\]</span></p>
-<p>此处 <span class="math display">\[\begin{align}
-a_{0}&amp;=\frac{\lambda}{\alpha}=\frac{\hbar}{\alpha
-mc}\approx0.53\,\mathrm{\AA}\\
-v_{0}&amp;=\alpha c\approx2.2\times10^{3}\,\text{km/s}\\
-E_{0}&amp;=\alpha^{2}\frac{1}{2}mc^{2}\approx13.6\,\text{eV}
-\end{align}\]</span></p>
-<p>从而可以与精细结构或超精细结构的数量级进行比较：</p>
-<p><span class="math display">\[\begin{align}
-\frac{\langle W_{F}\rangle}{\langle
-H_{0}\rangle}&amp;\approx\frac{1}{E_{0}}\frac{(mv_{0})^{4}}{8m^{3}c^{2}}=\frac{\alpha^{2}}{4}\approx\frac{1}{4}(\frac{1}{137})^{2}\\
-\frac{\langle W_{HF}\rangle}{\langle
-W_{F}\rangle}&amp;\approx\frac{m_{e}}{m_{p}}\approx\frac{1}{1836}
-\end{align}\]</span></p>
-<p>之所以角动量的耦合分为两步，正是因为此处所示微扰项的量级不同；从实验测量的角度，随着测量精度的提高，观测到谱线的“分裂”，对应原子能级的精细结构或超精细结构。</p>
-<h4 id="外电磁场中的原子">外电磁场中的原子</h4>
-<p>在均匀外磁场<span
-class="math inline">\(\vec{B}=B\vec{e}_{z}\)</span>中，有微扰项</p>
-<p><span class="math display">\[\begin{align}
-W_{z}&amp;=-\vec{B}\cdot(\vec{M}_{L}+\vec{M}_{S}+\vec{M}_{I})\\
-&amp;=\frac{\mu_{B}B}{\hbar}(L_{z}+2S_{z}+g_{I}I_{z})
-\end{align}\]</span></p>
-<p>倘若<span class="math inline">\(\omega_{0}=\mu_{B}B/\hbar\ll
-W_{HF}\)</span>，近似认为<span
-class="math inline">\(F\)</span>是一个好量子数，从而<span
-class="math inline">\(W_{z}=\omega_{0}F_{z}\)</span>；反之，倘若<span
-class="math inline">\(W_{HF}\ll\omega_{0}\ll
-W_{F}\)</span>，近似认为<span
-class="math inline">\(J_{z}\)</span>和<span
-class="math inline">\(I_{z}\)</span>是好量子数。这种处理方法类似多电子原子的LS耦合制式与JJ耦合制式的区分。</p>
-<h3 id="激光冷却原子">激光冷却原子</h3>
-<aside id="footnotes" class="footnotes footnotes-end-of-document"
-role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1"><p>关于Darwin项的介绍，可以参考高守恩《<a
-target="_blank" rel="noopener" href="https://kns.cnki.net/kcms2/article/abstract?v=S5uBaE2M3OftH4BUxS5wK6aL72j4ma0L80nsoKKXi5eoroxlhc6F1JeGTkmAuy7SHKGJR4m1-3hW5pWp9_h_t4U7CumkuIa5d8dPubbP860hUPWcOhlACPACL-nOMchb5T9yqQhW_kU">关于Dirac相对论量子力学中Zitterbewegung和Darwin项一些问题</a>》或曾谨言《量子力学(卷II)》第10.4节相关内容。<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li
-id="fn2"><p>此处参考刘玉鑫《原子物理学讲义》稍作补充，具体推导建议参考其他教材。<a
-href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</aside>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/%5BPhys%5D%20Bose-Einstein%20Condensation%20(1)/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
